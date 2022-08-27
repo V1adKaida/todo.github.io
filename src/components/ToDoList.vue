@@ -263,6 +263,7 @@ export default {
     min-height: 50px;
     padding: 8px 0;
     width: 100%;
+    background: #fff;
     border-bottom: 1px solid #000;
 
     >div {
