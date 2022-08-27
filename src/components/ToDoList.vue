@@ -264,7 +264,6 @@ export default {
     padding: 8px 0;
     width: 100%;
     border-bottom: 1px solid #000;
-    transition: 0.2s;
 
     >div {
       display: flex;
@@ -289,8 +288,8 @@ export default {
       }
     }
 
-    &.sortable-drag {
-      transition: inherit;
+    &.sortable-drag,.sortable-fallback {
+      opacity: 1 !important;
     }
 
     &.ghost {
