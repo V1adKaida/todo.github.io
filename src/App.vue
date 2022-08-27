@@ -1,30 +1,36 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <router-view />
+  <notifications position="bottom right" />
 </template>
 
+<script>
+
+export default {
+
+  mounted() {
+    this.$store.dispatch('state')
+  }
+}
+</script>
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  background-image: url(https://uploads-ssl.webflow.com/5f00ac7516929863f832df2c/5f4bfbcbb2f92145c5b96518_06.%20Wisteria.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Rubik', sans-serif;
+  overflow-x: hidden;
 }
 
-nav {
-  padding: 30px;
+* {
+  box-sizing: border-box;
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+  &:focus {
+    box-shadow: none;
+    outline: none;
   }
 }
 </style>
