@@ -105,7 +105,7 @@ export default createStore({
       })
     },
 
-    state(context) {
+    userState(context) {
       return new Promise(resolve => {
         const auth = getAuth();
         onAuthStateChanged(auth, (user) => {
