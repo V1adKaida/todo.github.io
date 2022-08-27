@@ -15,7 +15,7 @@
             </div>
           </div>
           <div class="drop-down">
-            <div @click="singout">Logout</div>
+            <div @click.stop="singout">Logout</div>
           </div>
 
         </div>
@@ -287,6 +287,10 @@ export default {
       .drag {
         cursor: grabbing
       }
+    }
+
+    &.sortable-drag {
+      transition: inherit;
     }
 
     &.ghost {
