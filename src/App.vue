@@ -22,7 +22,6 @@ body {
   background-attachment: fixed;
   font-family: 'Rubik', sans-serif;
   min-height: -webkit-fill-available;
-  padding-bottom: calc(1rem + env(safe-area-inset-bottom));
   overflow-x: hidden;
 }
 

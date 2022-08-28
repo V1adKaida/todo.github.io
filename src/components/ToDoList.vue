@@ -171,7 +171,7 @@ export default {
 .center {
   display: flex;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 100%;
   padding: 24px;
 }
 
