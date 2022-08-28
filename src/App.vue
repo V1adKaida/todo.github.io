@@ -21,6 +21,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   font-family: 'Rubik', sans-serif;
+  height: calc(100vh - env(safe-area-inset-bottom));
   overflow-x: hidden;
 }
 
